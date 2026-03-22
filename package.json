@@ -1,0 +1,35 @@
+{
+  "name": "ddb-example-unit-above-axis",
+  "description": "",
+  "main": "index.tsx",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "@types/leaflet": "1.7.0",
+    "@types/react": "^16",
+    "@types/react-dom": "^16",
+    "@visx/axis": "1.8.0",
+    "@visx/gradient": "latest",
+    "@visx/grid": "1.8.0",
+    "@visx/group": "latest",
+    "@visx/mock-data": "latest",
+    "@visx/responsive": "latest",
+    "@visx/scale": "latest",
+    "@visx/shape": "latest",
+    "bootstrap": "5.0.0",
+    "leaflet": "1.7.1",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-leaflet": "3.1.0",
+    "react-scripts-ts": "^2.13.0",
+    "styled-components": "5.3.0",
+    "typescript": "^3"
+  },
+  "keywords": [],
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}

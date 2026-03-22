@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+:root {
+  --color-water: #00bbe1;
+  --color-water-bg: rgba(0, 187, 255, 0.1);
+  --color-break: #05bb4a;
+  --color-break-bg: rgba(5, 187, 74, 0.1);
+  --color-exercise: #6c31d1;
+  --color-exercise-bg: rgba(108, 49, 209, 0.1);
+  --color-gray-dark: #6c757d;
+  --color-gray-light: #adb5bd;
+  --color-white: #fff;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  margin-bottom: 0.5rem;
+}
+
+.row-chart {
+  margin-bottom: 2rem;
+}
+
+.row-chart,
+.map {
+  height: 18vh;
+}
+
+.map {
+  border-radius: 1rem;
+}
+
+.map .leaflet-bar {
+  display: none;
+}
+
+.water-cups {
+  margin: 0 -0.1rem;
+  line-height: 1;
+}
+
+.water-cup {
+  display: block;
+  float: left;
+  font-size: 4vw;
+  margin: 0 0.1rem 0.2em 0.1rem;
+  position: relative;
+  color: var(--color-gray-light);
+}
+
+.water-cup:nth-child(-n + 5) {
+  color: var(--color-water);
+}
+
+.water-cup-label {
+  position: absolute;
+  font-size: 2vw;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.badge-water,
+.badge-break,
+.badge-exercise,
+.badge-empty {
+  font-weight: normal;
+}
+
+.badge-water {
+  color: var(--color-water);
+  background: var(--color-water-bg);
+}
+
+.badge-break {
+  color: var(--color-break);
+  background: var(--color-break-bg);
+}
+
+.badge-exercise {
+  color: var(--color-exercise);
+  background: var(--color-exercise-bg);
+}
+
+.badge-empty {
+  color: var(--color-gray-light);
+}
+
+.break-info {
+  white-space: nowrap;
+  line-height: 1;
+  padding-left: 1rem;
+}
+
+.break-time {
+  color: var(--color-break);
+}
+
+.break-total {
+  font-size: 0.75rem;
+  color: var(--color-gray-dark);
+  margin-bottom: 0.5rem;
+}
+
+.btn-break {
+  background-color: var(--color-break);
+}
+
+.btn-break,
+.btn-break:hover {
+  color: var(--color-white);
+}
+
+.clock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clock-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clock-face-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-face {
+  transform-origin: top left;
+}
